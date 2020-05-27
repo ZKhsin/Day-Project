@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/weatherApp.jpg) no-repeat center center / cover;
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px 10px;
+}
+
+header h1 {
+  font-size: 28px;
+  padding: 0 0 30px 0;
+  letter-spacing: 1px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px 15px 0 0;
+  border-bottom: 3px solid #fff;
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.5s ease-out;
+}
+
+header input:hover::placeholder {
+  color: #313131;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+header input::placeholder {
+  color: #fff;
+}
+
+header input:focus::placeholder {
+  color: #313131;
+}
+
+main {
+  padding: 25px 25px 30px;
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  font-size: 16px;
+}
+
+.current .temp {
+  font-size: 80px;
+  font-weight: 900;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.weather img {
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+
+.current .high-low {
+  font-size: 24px;
+  font-weight: 500;
+}
