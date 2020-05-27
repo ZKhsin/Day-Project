@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./background.jpg") no-repeat center center / cover;
+  font-family: serif;
+  color: #eee;
+  overflow: hidden;
+}
+
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  z-index: -1;
+}
+
+h1 {
+  margin-bottom: 100px;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px #000;
+  z-index: 10;
+}
+
+#year {
+  position: absolute;
+  font-size: 450px;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#year span {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.countdown {
+  display: flex;
+  font-size: 2.5rem;
+}
+
+.time {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px #000;
+  z-index: 10;
+}
+
+.time h2 {
+  text-shadow: 3px 3px #000;
+}
+
+.time p {
+  margin-top: 10px;
+  color: #000;
+  font-weight: 700;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+}
