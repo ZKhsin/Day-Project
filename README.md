@@ -8,3 +8,4 @@ This repository record my small project
 | 02  |      Registor Form      |     Multi step sign up form      |       [DEMO](https://day-project.zkhsin.now.sh/Registor%20Form/)       |
 | 03  |   Countdown New Year    |     Coundtdown to next year      |   [DEMO](https://day-project.zkhsin.now.sh/Countdown%20New%20Year/)    |
 | 04  | Image Comparison Slider |  Use progress bar change image   | [DEMO](https://day-project.zkhsin.now.sh/Image%20Comparison%20Slider/) |
+| 05  |     Color Generator     |      Random color generator      |      [DEMO](https://day-project.zkhsin.now.sh/Color%20Generator/)      |
