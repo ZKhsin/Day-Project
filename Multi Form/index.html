@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registor Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>Sign Up</header>
+    <div class="progress-bar">
+      <div class="step">
+        <div class="step-content">
+          <span>1</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <span>2</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <span>3</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <span>4</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+    </div>
+    <div class="form-container">
+      <form method="POST">
+        <div class="page slide">
+          <div class="title">Basic Info:</div>
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" autocomplete="off" name="firstName" id="firstName" placeholder="Enter your firstname">
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" autocomplete="off" name="lastName" id="lastName" placeholder="Enter your lastname">
+          </div>
+          <div class="field">
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="title">Personal Info:</div>
+          <div class="field">
+            <label for="date">Date of birth</label>
+            <input type="text" autocomplete="off" name="date" id="date" placeholder="year / month / day">
+          </div>
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" autocomplete="off">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field btns">
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+
+
+        <div class="page">
+          <div class="title">Contact Info:</div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="text" autocomplete="off" name="email" id="email" placeholder="Enter your email">
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="text" autocomplete="off" name="phone" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="field btns">
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="title">Login Info:</div>
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" autocomplete="off" name="username" id="username" placeholder="Enter your username">
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" autocomplete="off" name="password" id="password" placeholder="Enter your password">
+          </div>
+          <div class="field btns">
+            <button type="button" class="prev">Previous</button>
+            <button type="button" class="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
