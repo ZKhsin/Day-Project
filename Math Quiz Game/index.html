@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="settings">
+    <div class="settings-form">
+      <label for="difficulty">Difficulty</label>
+      <select name="difficulty" id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Math Quiz Game</h1>
+    <div class="score-board">
+      <div class="score">
+        <p>Score: <span>0</span></p>
+      </div>
+      <div class="wrong">
+        <p>Wrong: <span>0</span></p>
+      </div>
+    </div>
+    <div class="quiz-box">
+      <div class="box">
+        <p class="num-1"></p>
+      </div>
+      <div class="operation">
+        <p></p>
+      </div>
+      <div class="box">
+        <p class="num-2"></p>
+      </div>
+    </div>
+    <div class="answer-box">
+      <label for="answer"></label>
+      <input type="text" id="answer" placeholder="Enter your answer">
+      <small><i class="far fa-times-circle"></i></small>
+    </div>
+    <div class="check">
+      <button>Check Answer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
