@@ -14,14 +14,15 @@ function convertNumber() {
   oct.textContent = `${value.toString(8)}`;
   hex.textContent = `${value.toString(16)}`;
   convertor.style.visibility = "visible";
+}
 
-  dec.addEventListener("input", () => {
+button.addEventListener("click", () => {
+  convertNumber();
+  dec.addEventListener("keyup", () => {
     if (dec.value === "") {
-      convertor.style.visibility = "hidden";
+      window.location.reload();
     } else {
       convertNumber();
     }
   });
-}
-
-button.addEventListener("click", convertNumber);
+});
