@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #303242;
+}
+
+h1 {
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.1);
+  text-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s ease-in;
+}
+
+@keyframes animate {
+  100% {
+    opacity: 0;
+    bottom: 120%;
+  }
+}
