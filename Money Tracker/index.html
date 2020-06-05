@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Money <span>Tracker</span></h1>
+
+      <div class="balance">
+        <p>Balance</p>
+        <div class="balance-value">
+          <small>$ </small>0
+        </div>
+      </div>
+
+      <div class="account">
+        <div class="income-total">
+          <p>Income</p>
+          <div class="income-total-value">
+            <small>$ </small>0
+
+          </div>
+        </div>
+
+        <div class="chart"></div>
+
+        <div class="expense-total">
+          <p>Expense</p>
+          <div class="expense-total-value">
+            <small>$ </small>0
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="dashboard">
+      <h2>Dashboard</h2>
+
+      <div class="toggle">
+        <div class="income active">Income</div>
+        <div class="expense">Expense</div>
+        <div class="history">History</div>
+      </div>
+
+      <div id="income" class="content">
+        <ul class="list">
+        </ul>
+        <div class="input">
+          <label for="income-event"></label>
+          <input type="text" name="income-event" id="income-event" placeholder="Add The Event">
+          <label for="income-amount"></label>
+          <input type="number" name="income-amount" id="income-amount" placeholder="Enter The Amount">
+          <i id="add-income" class="fas fa-plus-square"></i>
+        </div>
+      </div>
+
+      <div id="expense" class="content hide">
+        <ul class="list">
+        </ul>
+        <div class="input">
+          <label for="expense-event"></label>
+          <input type="text" name="expense-event" id="expense-event" placeholder="Add The Event">
+          <label for="expense-amount"></label>
+          <input type="number" name="expense-amount" id="expense-amount" placeholder="Enter The Amount">
+          <i id="add-expense" class="fas fa-plus-square"></i>
+        </div>
+      </div>
+
+      <div id="history" class="content hide">
+        <ul class="list">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

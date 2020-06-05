@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Quicksand");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(45deg, #2bc0e4, #eaecc6);
+}
+
+h1,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.header {
+  position: relative;
+  width: 450px;
+  margin-top: 30px;
+  padding: 20px 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: linear-gradient(45deg, #0f0c29, #302b63);
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px rgba(48, 43, 99, 0.5);
+}
+
+.header h1 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.header h1 span {
+  font-weight: 700;
+}
+
+.header .balance {
+  margin: 20px 0 50px;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.header .chart {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header .account {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.15rem;
+}
+
+.header .account .expense-total {
+  color: #ff1744;
+}
+
+.dashboard {
+  background: linear-gradient(45deg, #e0eafc, #cfdef3);
+  width: 450px;
+  padding: 20px 30px;
+  color: #302b63;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 20px rgba(48, 43, 99, 0.5);
+}
+
+.dashboard h2 {
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+}
+
+.dashboard .toggle {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.15rem;
+  color: rgba(48, 43, 99, 0.5);
+  cursor: pointer;
+}
+
+.dashboard .toggle div:hover,
+.dashboard .toggle div.active {
+  color: #302b63;
+  font-weight: 700;
+}
+
+.dashboard .content {
+  padding: 20px 0 0;
+  height: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard .content .list {
+  height: 85%;
+  padding-left: 40px;
+  list-style-type: none;
+  overflow-y: scroll;
+  font-size: 1.2rem;
+}
+
+.dashboard #history .list {
+  height: 100%;
+}
+
+.dashboard .content .list li {
+  position: relative;
+  padding: 3px;
+}
+
+.dashboard .content .list li.red {
+  color: #ff1744;
+}
+
+.dashboard .content .list li span {
+  font-weight: 700;
+  padding-right: 10px;
+  font-size: 1.1rem;
+}
+
+.dashboard .content .list li .delete {
+  position: absolute;
+  right: 50%;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #0f0c29;
+  cursor: pointer;
+}
+
+.dashboard .hide {
+  display: none;
+}
+
+.dashboard .input {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+.dashboard .input input {
+  width: 200px;
+  height: 100%;
+  outline: none;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #302b63;
+}
+
+.dashboard .input input[type="text"] {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.dashboard .input input[type="number"] {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+}
+
+.dashboard .input input::placeholder {
+  color: rgba(48, 43, 99, 0.5);
+}
+
+.dashboard .input i {
+  margin-left: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dashboard .input i:active {
+  transform: scale(0.95);
+}
