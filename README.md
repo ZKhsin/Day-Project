@@ -16,4 +16,4 @@ This repository record my small project
 | 10  |     Math Quiz Game      |          Play arithmetic game          |     [DEMO](https://day-project.zkhsin.now.sh/Math%20Quiz%20Game/)      |
 | 11  |    Bubble Animation     |    Simple bubble generate animation    |     [DEMO](https://day-project.zkhsin.now.sh/Bubble%20Animation/)      |
 | 12  |      Money Tracker      |      Check and record money usage      |       [DEMO](https://day-project.zkhsin.now.sh/Money%20Tracker/)       |
-| 13  |   Travel Lading Page    | Show three country beauty landing page |   [DEMO](https://day-project.zkhsin.now.sh/Travel%20Landing%20Page/)   |
+| 13  |   Travel Landing Page   | Show three country beauty landing page |   [DEMO](https://day-project.zkhsin.now.sh/Travel%20Landing%20Page/)   |
