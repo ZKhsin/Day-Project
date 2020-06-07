@@ -53,8 +53,7 @@ function updateChart(income, expense) {
 
 // Set UI
 const date = new Date();
-const month = date.getMonth();
-const day = date.getDay();
+const day = `${date.getMonth() + 1}/${date.getDate()}`;
 
 const localStorageItems = JSON.parse(localStorage.getItem("items"));
 let items = localStorage.getItem("items") !== null ? localStorageItems : [];
@@ -69,6 +68,7 @@ function addItem(item, event, amount) {
   if (!event.value || !amount.value) return;
 
   const pushItem = {
+    date: day,
     id: getID(),
     type: item.parentElement.id,
     event: event.value,
@@ -114,7 +114,7 @@ function updateTotal() {
 function updateBoard(item) {
   const newItem = document.createElement("li");
   newItem.innerHTML = `
-  <span>${month + 1}/${day}</span>${item.event}: $${
+  <span>${day}</span>${item.event}: $${
     item.amount < 0 ? item.amount * -1 : item.amount
   } <i class="fas fa-trash-alt delete" onclick="removeItem(${item.id})"></i>`;
   if (item.type === "expense") {
@@ -131,7 +131,7 @@ function updateHistory(item) {
     newItem.classList.add("red");
   }
   newItem.innerHTML = `
-  <span>${month + 1}/${day}</span>${item.event}: $${
+  <span>${day}</span>${item.event}: $${
     item.amount < 0 ? item.amount * -1 : item.amount
   }`;
 
