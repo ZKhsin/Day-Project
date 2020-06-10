@@ -20,3 +20,4 @@ This repository record my small project
 | 14  |   Filter Upload Photo   |    Choose photo and use filter change photo    |   [DEMO](https://day-project.zkhsin.now.sh/Filter%20Upload%20Photo/)   |
 | 15  |     Cursor Tracker      |     Use click cursor see background image      |      [DEMO](https://day-project.zkhsin.now.sh/Cursor%20Tracker/)       |
 | 16  |      Parallax Page      | Try parallax, animation and change mode effect |       [DEMO](https://day-project.zkhsin.now.sh/Parallax%20Page/)       |
+| 17  |       Snake Game        |   Move snake to eat food and get more score    |        [DEMO](https://day-project.zkhsin.now.sh/Snake%20Game/)         |
