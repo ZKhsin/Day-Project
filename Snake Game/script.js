@@ -96,7 +96,7 @@ function gameOver() {
   window.cancelAnimationFrame(main);
   modal.classList.add("active");
   restart.addEventListener("click", () => {
-    window.location = "/";
+    window.location.reload();
   });
 }
 
