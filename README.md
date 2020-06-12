@@ -22,3 +22,4 @@ This repository record my small project
 | 16  |      Parallax Page      | Try parallax, animation and change mode effect |       [DEMO](https://day-project.zkhsin.now.sh/Parallax%20Page/)       |
 | 17  |       Snake Game        |   Move snake to eat food and get more score    |        [DEMO](https://day-project.zkhsin.now.sh/Snake%20Game/)         |
 | 18  |       Get KeyCode       |       Press keyboard key to get KeyCode        |        [DEMO](https://day-project.zkhsin.now.sh/Get%20KeyCode/)        |
+| 19  |       Calculator        |               Smiple calculator                |         [DEMO](https://day-project.zkhsin.now.sh/Calculator/)          |
