@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    rgb(86, 95, 151) 0%,
+    rgb(86, 95, 151) 63%,
+    rgb(105, 118, 165) 63%,
+    rgb(105, 118, 165) 75%,
+    rgb(125, 141, 179) 75%,
+    rgb(125, 141, 179) 81%,
+    rgb(144, 165, 193) 81%,
+    rgb(144, 165, 193) 85%,
+    rgb(164, 188, 207) 85%,
+    rgb(164, 188, 207) 90%,
+    rgb(183, 211, 221) 90%,
+    rgb(183, 211, 221) 100%
+  );
+}
+
+.calculator {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.calculator .output {
+  grid-column: 1 / -1;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calculator .output .previous {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+}
+
+.calculator .output .current {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.calculator button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  color: #4f4f4f;
+  background: #fff;
+}
+
+.calculator button:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: #333;
+}
+
+.calculator button:active {
+  transform: scale(0.98);
+}
+
+.calculator .two {
+  grid-column: span 2;
+}
+
+.calculator .clear {
+  background: #f35247;
+  color: #fff;
+}
+
+.calculator .clear:hover {
+  background: #eb3b2e;
+  color: #fff;
+}
+
+.calculator .delete {
+  background: #4f4f4f;
+  color: #fff;
+}
+
+.calculator .delete:hover {
+  background: #4d4242;
+  color: #fff;
+}
+
+.calculator .operation {
+  color: #495cdb;
+}
+
+.calculator .operation:hover {
+  background: #495cdb;
+  color: #fff;
+}
+
+.calculator .equal {
+  background: #04189b;
+  color: #fff;
+}
+
+.calculator .equal:hover {
+  background: #07125e;
+  color: #fff;
+}
