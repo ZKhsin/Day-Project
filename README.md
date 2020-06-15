@@ -23,3 +23,4 @@ This repository record my small project
 | 17  |       Snake Game        |   Move snake to eat food and get more score    |        [DEMO](https://day-project.zkhsin.now.sh/Snake%20Game/)         |
 | 18  |       Get KeyCode       |       Press keyboard key to get KeyCode        |        [DEMO](https://day-project.zkhsin.now.sh/Get%20KeyCode/)        |
 | 19  |       Calculator        |               Smiple calculator                |         [DEMO](https://day-project.zkhsin.now.sh/Calculator/)          |
+| 20  |   Password Generator    |            Random generate password            |    [DEMO](https://day-project.zkhsin.now.sh/Password%20Generator/)     |
