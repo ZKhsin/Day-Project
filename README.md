@@ -24,3 +24,4 @@ This repository record my small project
 | 18  |       Get KeyCode       |       Press keyboard key to get KeyCode        |        [DEMO](https://day-project.zkhsin.now.sh/Get%20KeyCode/)        |
 | 19  |       Calculator        |               Smiple calculator                |         [DEMO](https://day-project.zkhsin.now.sh/Calculator/)          |
 | 20  |   Password Generator    |            Random generate password            |    [DEMO](https://day-project.zkhsin.now.sh/Password%20Generator/)     |
+| 21  |       Typing Game       |              Test type word speed              |        [DEMO](https://day-project.zkhsin.now.sh/Typing%20Game/)        |
