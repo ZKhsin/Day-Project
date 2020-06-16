@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(45deg, #00cdac, #02aab0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: #04d1d8;
+  color: #240115;
+  font-size: 1rem;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: "Abril Fatface", cursive;
+}
+
+h1,
+h1 span,
+h2 {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 8px;
+}
+
+select {
+  width: 200px;
+  margin-left: 5px;
+  padding: 10px;
+  border-color: #240115;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+input {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  margin: 30px 0;
+  outline: none;
+}
+
+#show-info {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+#show-settings {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+
+#info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+
+#info.show {
+  transform: translateX(0);
+}
+
+#info p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+#info p:nth-of-type(5) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#info i {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+#settings.show {
+  transform: translateY(0);
+}
+
+.container {
+  position: relative;
+  background: #0d2f30;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  padding: 20px 80px;
+  background: #240115;
+  text-align: center;
+}
+
+.container h1 span {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.container .boxes {
+  padding: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.container #word {
+  margin: 10px 0 0;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container #game-over {
+  background: inherit;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.container #game-over h1 {
+  padding-bottom: 30px;
+}
+
+.container #game-over p {
+  padding: 30px;
+  font-size: 2rem;
+}

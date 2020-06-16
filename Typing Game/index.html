@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="show-settings">
+    <i class="fas fa-cog"></i>
+  </button>
+  <button id="show-info">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div id="settings">
+    <form id="setting">
+      <div>
+        <label for="difficulty">Difficulty</label>
+        <select name="difficulty" id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <div id="info">
+    <h1>Information</h1>
+    <p>Type each word as soon as quick in the thirty seconds</p>
+    <p>If the type word is correct,score and seconds will increase</p>
+    <p>Click setting button can change difficulty</p>
+    <p>Different difficulty increases different seconds</p>
+    <p>Happy Typing!</p>
+    <i class="fas fa-times" id="close"></i>
+  </div>
+
+  <div class="container">
+    <h1>Typing Game <span>Test Speed</span> </h1>
+
+    <div class="boxes">
+      <div class="time-box">
+        Time: <span id="time">30s</span>
+      </div>
+
+      <div class="score-box">
+        Score: <span id="score">0</span>
+      </div>
+    </div>
+
+    <p>Type the following: </p>
+    <div id="word"></div>
+
+    <input type="text" name="text" id="text" autocomplete="off" placeholder="Type the word here">
+
+    <div id="game-over">
+      <h1>Time's Up</h1>
+      <p>Your final score is <span id="result">0</span></p>
+      <button id="restart">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
