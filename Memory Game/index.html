@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="start-game">
+    <button>Start Game</button>
+  </div>
+
+  <h1>Memory Game</h1>
+  <div class="boxes">
+    <div class="time-box">
+      <div>Times: <span id="time">0</span></div>
+    </div>
+    <button id="restart">
+      <i class="fas fa-redo-alt"></i>
+    </button>
+    <div class="move-box">
+      <div>Moves: <span id="move">0</span></div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card" data-type="plane">
+      <div class="back"><i class="fab fa-telegram-plane"></i></div>
+    </div>
+    <div class="card" data-type="plane">
+      <div class="back"><i class="fab fa-telegram-plane"></i></div>
+    </div>
+    <div class="card" data-type="bomb">
+      <div class="back"><i class="fas fa-bomb"></i></div>
+    </div>
+    <div class="card" data-type="bomb">
+      <div class="back"><i class="fas fa-bomb"></i></div>
+    </div>
+    <div class="card" data-type="angellist">
+      <div class="back"><i class="fab fa-angellist"></i></div>
+    </div>
+    <div class="card" data-type="angellist">
+      <div class="back"><i class="fab fa-angellist"></i></div>
+    </div>
+    <div class="card" data-type="bicycle">
+      <div class="back"><i class="fas fa-bicycle"></i></div>
+    </div>
+    <div class="card" data-type="bicycle">
+      <div class="back"><i class="fas fa-bicycle"></i></div>
+    </div>
+    <div class="card" data-type="bolt">
+      <div class="back"><i class="fas fa-bolt"></i></div>
+    </div>
+    <div class="card" data-type="bolt">
+      <div class="back"><i class="fas fa-bolt"></i></div>
+    </div>
+    <div class="card" data-type="bone">
+      <div class="back"><i class="fas fa-bone"></i></div>
+    </div>
+    <div class="card" data-type="bone">
+      <div class="back"><i class="fas fa-bone"></i></div>
+    </div>
+    <div class="card" data-type="broom">
+      <div class="back"><i class="fas fa-broom"></i></div>
+    </div>
+    <div class="card" data-type="broom">
+      <div class="back"><i class="fas fa-broom"></i></div>
+    </div>
+    <div class="card" data-type="book">
+      <div class="back"><i class="fas fa-book"></i></div>
+    </div>
+    <div class="card" data-type="book">
+      <div class="back"><i class="fas fa-book"></i></div>
+    </div>
+  </div>
+
+  <div id="modal">
+    <h1>Congratulation!</h1>
+    <p>You made <span id="final-move">0</span> moves</p>
+    <p>Spend in <span id="final-time">0</span> seconds</p>
+    <button id="play-again">Play Again</button>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
