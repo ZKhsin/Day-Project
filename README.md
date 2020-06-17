@@ -1,6 +1,6 @@
 # Day Project
 
-This repository record my small project
+This repository record my everyday JavaScript project
 
 | No  |         Project         |                  Description                   |                                  DEMO                                  |
 | :-: | :---------------------: | :--------------------------------------------: | :--------------------------------------------------------------------: |
