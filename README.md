@@ -26,3 +26,4 @@ This repository record my everyday JavaScript project
 | 20  |   Password Generator    |            Random generate password            |    [DEMO](https://day-project.zkhsin.now.sh/Password%20Generator/)     |
 | 21  |       Typing Game       |              Test type word speed              |        [DEMO](https://day-project.zkhsin.now.sh/Typing%20Game/)        |
 | 22  |       Memory Game       |            Play a simple match game            |        [DEMO](https://day-project.zkhsin.now.sh/Memory%20Game/)        |
+| 23  |      Exchange Rate      |   Show select currency current exchange rate   |       [DEMO](https://day-project.zkhsin.now.sh/Exchange%20Rate/)       |
