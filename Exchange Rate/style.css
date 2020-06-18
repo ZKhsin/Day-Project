@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background: #252a34;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+header {
+  margin: 0 0 50px;
+  width: 100%;
+  padding: 10px 0;
+  background: #fc3a52;
+  color: #252a34;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  letter-spacing: 2px;
+  margin: 0 0 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container .currency-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container .currency-box .currency {
+  position: relative;
+  padding: 50px;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+}
+
+.container .currency-box .currency:first-child {
+  margin-right: 28px;
+}
+
+.container .currency-box .currency::after {
+  content: "";
+  position: absolute;
+  padding: 86px 95px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fc3a52;
+  z-index: -1;
+}
+
+.container .currency-box .currency select {
+  width: 100px;
+  height: 50px;
+  margin: 0 0 10px;
+  padding-left: 25px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.container .currency-box .currency select option {
+  color: #252a34;
+}
+
+.container .currency-box .currency select:hover {
+  border: 1px solid #fc3a52;
+}
+
+.container .currency-box .switch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.container .currency-box .switch button {
+  font-size: 2rem;
+  background: #08d9d6;
+  color: #252a34;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.container .currency-box .switch button:active {
+  transform: scale(0.95);
+}
+
+.calculate-container {
+  margin: 30px 0;
+  padding: 30px 65px 20px;
+  border: 1px solid #fff;
+  font-size: 1.1rem;
+}
+
+.calculate-container .input-currency {
+  padding: 0 0 20px;
+}
+
+.calculate-container input {
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 1.5rem;
+  color: #252a34;
+}
+
+.calculate-container .input-currency input {
+  border: 1px solid #fc3a52;
+}
+
+.calculate-container .output-currency input {
+  background: #fc3a52;
+  border: 1px solid #fff;
+  font-weight: 700;
+  cursor: default;
+}
