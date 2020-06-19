@@ -27,3 +27,4 @@ This repository record my everyday JavaScript project
 | 21  |       Typing Game       |              Test type word speed              |        [DEMO](https://day-project.zkhsin.now.sh/Typing%20Game/)        |
 | 22  |       Memory Game       |            Play a simple match game            |        [DEMO](https://day-project.zkhsin.now.sh/Memory%20Game/)        |
 | 23  |      Exchange Rate      |   Show select currency current exchange rate   |       [DEMO](https://day-project.zkhsin.now.sh/Exchange%20Rate/)       |
+| 24  |   Rock Paper Scissors   |  Play rock,paper,scissors game with computer   |   [DEMO](https://day-project.zkhsin.now.sh/Rock%20Paper%20Scissors/)   |
