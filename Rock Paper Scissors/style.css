@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC&display=swap");
+
+@font-face {
+  font-family: "Finished Sympathy Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Finished Sympathy Regular"),
+    url("FinishedSympathy-2zvl.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(./bg.png) no-repeat center center / contain,
+    linear-gradient(45deg, #11a49b, #90fc8e);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+h1 {
+  margin: 30px 0;
+  font-family: "Finished Sympathy Regular";
+  font-size: 5.5rem;
+  text-align: center;
+  color: #26f7c2;
+  text-shadow: 5px 5px #046950;
+}
+
+.game-board {
+  width: 80%;
+}
+
+.game-board .score-board {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding: 10px;
+  background: rgba(38, 247, 194, 0.3);
+  font-family: "Carrois Gothic SC", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 2px solid #046950;
+}
+
+.game-board .game-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+  background: rgba(224, 242, 241, 0.5);
+  border: 2px solid #046950;
+}
+
+.game-board .game-box .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board .game-box .box i {
+  font-size: 5rem;
+  margin: 0 0 20px;
+  cursor: pointer;
+}
+
+.game-board .game-box .box i.player {
+  color: #1976d2;
+}
+
+.game-board .game-box .box i.computer {
+  color: #f50057;
+}
+
+.game-board .game-box .box i.tie {
+  color: #8e24aa;
+}
+
+.game-board .game-box .box #scissors {
+  transform: rotate(270deg) scaleX(-1);
+}
+
+.game-board .game-box .box p {
+  font-size: 1.7rem;
+  font-family: "Carrois Gothic SC", sans-serif;
+  letter-spacing: 2px;
+}
+
+#restart {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+}
+
+#restart button {
+  font-size: 1.5rem;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #046950;
+  border-radius: 20%;
+  color: #046950;
+  cursor: pointer;
+  outline: none;
+}
+
+#restart button:hover {
+  background: #fff;
+  color: #11a49b;
+}
+
+#restart button:active {
+  transform: scale(0.95);
+}

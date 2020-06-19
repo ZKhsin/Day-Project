@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="game-board">
+    <div class="score-board">
+      <div class="player">Player: <span id="player-score">0</span></div>
+      <div class="computer">Computer: <span id="computer-score">0</span></div>
+    </div>
+    <div class="game-box">
+      <div class="box">
+        <i id="rock" class="fas fa-hand-rock"></i>
+        <p>Rock</p>
+      </div>
+      <div class="box">
+        <i id="paper" class="fas fa-hand-paper"></i>
+        <p>Paper</p>
+      </div>
+      <div class="box">
+        <i id="scissors" class="fas fa-hand-scissors"></i>
+        <p>Scissors</p>
+      </div>
+    </div>
+    <div id="restart">
+      <button><i class="fas fa-redo-alt"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
