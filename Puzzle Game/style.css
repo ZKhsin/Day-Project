@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Bravery Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bravery Regular"), url("Bravery-anvE.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-family: "Bravery Regular";
+  font-size: 4rem;
+  letter-spacing: 8px;
+  text-shadow: 3px 3px #ff2e63, 5px 3px #ff2e63, 8px 3px #ff2e63;
+}
+
+.boxes {
+  width: 452px;
+  height: 452px;
+  border: 1px solid #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+}
+
+.boxes .box {
+  position: relative;
+  background: url("https://picsum.photos/450/450/?random=1");
+  background-repeat: no-repeat;
+  background-size: 450px 450px;
+  cursor: pointer;
+}
+
+.boxes .box.active {
+  box-shadow: inset 0 0 10px #ff2e63;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #282828;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-family: "Bravery Regular";
+  font-size: 4rem;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px #ff2e63;
+}
+
+.modal p {
+  margin: 0 0 30px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.modal button {
+  padding: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #ff2e63;
+  color: #282828;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background: #333;
+  color: #ff2e63;
+}
+
+.modal button:active {
+  transform: scale(0.95);
+}
