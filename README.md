@@ -29,3 +29,4 @@ This repository record my everyday JavaScript project
 | 23  |      Exchange Rate      |   Show select currency current exchange rate   |       [DEMO](https://day-project.zkhsin.now.sh/Exchange%20Rate/)       |
 | 24  |   Rock Paper Scissors   |  Play rock,paper,scissors game with computer   |   [DEMO](https://day-project.zkhsin.now.sh/Rock%20Paper%20Scissors/)   |
 | 25  |       Puzzle Game       |      Switch images to match default image      |        [DEMO](https://day-project.zkhsin.now.sh/Puzzle%20Game/)        |
+| 26  |       Drawing App       | Painting on canvas and save, download painting |        [DEMO](https://day-project.zkhsin.now.sh/Drawing%20App/)        |
