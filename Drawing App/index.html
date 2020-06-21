@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Drawing App</h1>
+  </header>
+
+  <div class="control-bar">
+    <div class="color-bar">
+      <label for="color">Color: </label>
+      <input type="color" name="color" id="color">
+    </div>
+    <div class="size-bar">
+      <label for="size">Size: </label>
+      <input type="range" name="size" id="size" min="5" max="20" value="12">
+      <small id="size-value">12</small>
+    </div>
+  </div>
+
+  <div class="canvas-box">
+    <canvas id="canvas" width="800px" height="400px"></canvas>
+  </div>
+
+  <div class="control-btn">
+    <button id="erase">Erase</button>
+    <button id="save">Save</button>
+    <button id="download">Download</button>
+    <button id="reset">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
