@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #434343, #000000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.btn:active,
+.navigation .nav-btn:active {
+  transform: scale(0.95);
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+}
+
+.btns {
+  width: 500px;
+  margin: 10px 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btns #add i,
+.btns #clear i {
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.cards {
+  perspective: 1000px;
+  position: relative;
+  height: 300px;
+  width: 500px;
+  max-width: 100%;
+  color: #333;
+}
+
+.card {
+  position: absolute;
+  opacity: 0;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(50%) rotateY(-10deg);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card.active {
+  cursor: pointer;
+  opacity: 1;
+  z-index: 10;
+  transform: translateX(0) rotateY(0deg);
+}
+
+.card.left {
+  transform: translateX(-50%) rotateY(10deg);
+}
+
+.inner-card {
+  transform-style: preserve-3d;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.card.show .inner-card {
+  transform: rotateX(180deg);
+}
+
+.inner-card-front,
+.inner-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.inner-card-front {
+  transform: rotateX(0deg);
+  z-index: 2;
+}
+
+.inner-card-back {
+  transform: rotateX(180deg);
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  margin: 20px 0;
+}
+
+.navigation .nav-btn {
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.navigation .nav-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.navigation p {
+  margin: 3px 25px 0;
+}
+
+.add-card {
+  opacity: 0;
+  z-index: -1;
+  background-color: #333;
+  border-top: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.add-card.show {
+  opacity: 1;
+  z-index: 2;
+}
+
+.add-card #close {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.add-card #close:hover {
+  background: #fff;
+  color: #333;
+}
+
+.add-card h2 {
+  margin: 10px 0;
+}
+
+.add-card .form-group label {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 1.3rem;
+}
+
+.add-card .form-group textarea {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  padding: 12px;
+  min-width: 500px;
+  max-width: 100%;
+  outline: none;
+}
+
+.add-card #add-card-btn {
+  margin-top: 20px;
+}
+
+.add-card #add-card-btn i {
+  padding-right: 5px;
+  font-size: 1rem;
+}
