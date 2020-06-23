@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45.34deg, #ecd3a1 5.66%, #ecd3a1 94.35%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  color: #5d4037;
+  margin: 20px 0;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px #bcaaa4;
+}
+
+.container .input-box {
+  margin: 0 0 20px;
+}
+
+.container .input-box input {
+  border: 1px solid #5d4037;
+  height: 40px;
+  width: 500px;
+  padding-left: 10px;
+  outline: none;
+  color: #5d4037;
+  font-size: 1rem;
+}
+
+.container .input-box input.light {
+  color: #bcaaa4;
+}
+
+.container .input-box input::placeholder {
+  color: #5d4037;
+}
+
+.container .input-box input.light::placeholder {
+  color: #bcaaa4;
+}
+
+.container .color-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .color-box div {
+  margin: 3px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .color-box div:hover {
+  transform: scale(1.1);
+}
+
+.container .color-box div:active {
+  transform: scale(0.98);
+}
+
+.container .color-box div:nth-of-type(1) {
+  background: #000000;
+}
+
+.container .color-box div:nth-of-type(2) {
+  background: #9e9e9e;
+}
+
+.container .color-box div:nth-of-type(3) {
+  background: #ffffff;
+}
+
+.container .color-box div:nth-of-type(4) {
+  background: #5d4037;
+}
+
+.container .color-box div:nth-of-type(5) {
+  background: #ff1744;
+}
+
+.container .color-box div:nth-of-type(6) {
+  background: #d500f9;
+}
+
+.container .color-box div:nth-of-type(7) {
+  background: #3d5afe;
+}
+
+.container .color-box div:nth-of-type(8) {
+  background: #ffff00;
+}
+
+.container .color-box div:nth-of-type(9) {
+  background: #1de9b6;
+}
+
+.container .color-box div:nth-of-type(10) {
+  background: #ff9100;
+}
+
+.container .color-box button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border: 2px solid #5d4037;
+  background: #bcaaa4;
+  color: #5d4037;
+  cursor: pointer;
+  outline: none;
+}
+
+.container .color-box #add-btn {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.container .color-box button:hover {
+  background: #5d4037;
+  color: #bcaaa4;
+  border: 2px solid #bcaaa4;
+}
+
+.container .color-box button:active {
+  transform: scale(0.95);
+}
+
+.notes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.notes .note {
+  position: relative;
+  margin: 20px 10px 10px;
+  padding: 20px;
+  width: 300px;
+  background: #fff;
+  word-wrap: break-word;
+}
+
+.notes .note .time {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.notes .note .delete {
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  cursor: pointer;
+  display: none;
+}
+
+.notes .note .delete:hover {
+  transform: scale(1.1);
+}
+
+.notes .note .delete:active {
+  transform: scale(0.95);
+}
+
+.notes .note:hover .delete {
+  display: block;
+}
+
+.notes.dark .note {
+  color: #fff;
+}

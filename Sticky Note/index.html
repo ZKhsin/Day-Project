@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Note</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sticky Note</h1>
+    <div class="input-box">
+      <label for="input-note"></label>
+      <input type="text" name="input-note" id="input-note" placeholder="Enter note content">
+    </div>
+    <div class="color-box">
+      <div id="black" data-color="#000000"></div>
+      <div id="gray" data-color="#9e9e9e"></div>
+      <div id="white" data-color="#ffffff"></div>
+      <div id="brown" data-color="#5d4037"></div>
+      <div id="red" data-color="#ff1744"></div>
+      <div id="purple" data-color="#d500f9"></div>
+      <div id="blue" data-color="#3d5afe"></div>
+      <div id="yellow" data-color="#ffff00"></div>
+      <div id="green" data-color="#1de9b6"></div>
+      <div id="orange" data-color="#ff9100"></div>
+
+      <button id="add-btn">
+        <i class="fas fa-plus"></i>
+      </button>
+
+      <button id="remove-btn">
+        <i class="fas fa-trash"></i>
+      </button>
+
+    </div>
+  </div>
+
+  <div id="notes" class="notes"></div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
