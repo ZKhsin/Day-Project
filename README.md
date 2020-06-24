@@ -32,3 +32,4 @@ This repository record my everyday JavaScript project
 | 26  |       Drawing App       | Painting on canvas and save, download painting |        [DEMO](https://day-project.zkhsin.now.sh/Drawing%20App/)        |
 | 27  |       Flash Card        |         Use flash card to learn things         |        [DEMO](https://day-project.zkhsin.now.sh/Flash%20Card/)         |
 | 28  |       Sticky Note       |        Create sticky note for your task        |        [DEMO](https://day-project.zkhsin.now.sh/Sticky%20Note/)        |
+| 29  |      Rotating Cube      |       Use three.js create rotating cube        |       [DEMO](https://day-project.zkhsin.now.sh/Rotating%20Cube/)       |
