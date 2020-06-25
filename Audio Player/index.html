@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <h1>Audio Player</h1>
+  <div class="container">
+    <div class="info">
+      <h4 id="title"></h4>
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+    </div>
+    <audio src="" id="audio"></audio>
+    <div class="img-box">
+      <img src="./img/country.png" alt="music" id="music-img">
+    </div>
+    <div class="navigation">
+      <button id="prev" class="btn">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="btn">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="btn">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
