@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45.34deg, #fff06f 5.66%, #fffbd6 92.04%);
+  color: #119da4;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #333;
+}
+
+h1 i {
+  margin: 0 10px;
+}
+
+h1 i:nth-of-type(1) {
+  transform: scaleX(-1);
+}
+
+#img-href {
+  width: 450px;
+  height: 300px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #333;
+  box-shadow: 3px 3px 10px #645a01;
+}
+
+#img-href img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#img-href.show {
+  display: flex;
+}
+
+button {
+  width: 150px;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  background: #fffbd6;
+  color: #119da4;
+  border: 2px solid #119da4;
+}
+
+button:hover {
+  background: #fff06f;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
