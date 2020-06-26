@@ -4,6 +4,8 @@ const random = document.querySelector(".random");
 const copy = document.querySelector(".copy");
 const title = document.querySelector("h3");
 
+color.focus();
+
 function showColor() {
   show.style.backgroundColor = `#${color.value}`;
   title.style.backgroundColor = `#${color.value}`;
