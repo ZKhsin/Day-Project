@@ -1,4 +1,4 @@
-# Daliy Doggy
+# Daily Doggy
 
 ## Project Point:
 
